@@ -64,6 +64,7 @@ module.exports = {
     ],
   },
   plugins: [
+    // ["@babel/plugin-proposal-decorators", { "legacy": true }],
     // 从.js文件中提取.css文件
     new ExtractTextPlugin({
       filename: '[name].css',
@@ -76,7 +77,7 @@ module.exports = {
       // 输出文件，文件目录是相对于webpackConfig.output.path路径而言的
       // 指定生成的html文件内容中的link和script路径是相对于生成目录下的
       filename: 'index.html',
-      template: 'page/a.html',
+      template: 'index.html',
       // 依赖的js，默认引入entry的全部js，css
       chunks: ['app'],
       minify: false
