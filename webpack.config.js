@@ -36,7 +36,7 @@ module.exports = {
         // include: path.resolve(__dirname, "./src/"),
         query: {
           // latest包含了es6，7，8全部
-          presets: ['latest', 'react']
+          presets: ['latest', 'react'],
         }
       },
       {
@@ -64,7 +64,7 @@ module.exports = {
     ],
   },
   plugins: [
-    // ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    // "transform-decorators-legacy",
     // 从.js文件中提取.css文件
     new ExtractTextPlugin({
       filename: '[name].css',

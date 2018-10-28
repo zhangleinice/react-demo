@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-const Input = (WrapComponent) => {
-    return class Input extends Component {
+const ppHOC = WrapComponent => {
+    return class extends Component {
         constructor(props){
             super(props);
             this.state = {
@@ -15,12 +15,13 @@ const Input = (WrapComponent) => {
             });
         }
         render() {
+            console.log(this.props);
             const newProps = {
                 name: {
                     value: this.state.name,
-                    onChangeName: this.onChangeName
+                    onChange: this.onChangeName
                 }
-            }
+            };
             return (
                 <WrapComponent {...this.props} {...newProps}/>
             );
@@ -28,4 +29,4 @@ const Input = (WrapComponent) => {
     };
 };
 
-export default Input;
+export default ppHOC;

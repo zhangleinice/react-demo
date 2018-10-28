@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 
 class PureComponent extends Component {
     // 默认true，重渲染
@@ -6,9 +6,9 @@ class PureComponent extends Component {
         const { props, state } = this;
         // 浅比较
         const shallowCompare = (a, b) => {
-            return !(a === b || Object.keys(a).every(k => a[k] === b[k]));
-        };
-        return shallowCompare(nextProps, props) && shallowCompare(nextState, state); 
+            return !(a === b || Object.keys(a).every(k => a[k] === b[k]))
+        }
+        return shallowCompare(nextProps, props) && shallowCompare(nextState, state) 
     }
 }
 

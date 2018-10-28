@@ -11,6 +11,7 @@
   "author": "rocky",
   "license": "ISC",
   "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.1.2",
     "autoprefixer": "^9.1.5",
     "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.1",
@@ -32,7 +33,7 @@
     "less-loader": "^4.1.0",
     "postcss": "^7.0.2",
     "postcss-loader": "^3.0.0",
-    "react": "^16.5.2",
+    "react": "^16.6.0",
     "react-dom": "^16.5.2",
     "serviceworker-webpack-plugin": "^1.0.1",
     "style-loader": "^0.23.0",
