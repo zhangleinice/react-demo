@@ -36,7 +36,8 @@ module.exports = {
         // include: path.resolve(__dirname, "./src/"),
         query: {
           // latest包含了es6，7，8全部
-          presets: ['latest', 'react'],
+          presets: ["es2015", "react", "stage-0"]
+          // plugins: ["transform-decorators-legacy"],
         }
       },
       {

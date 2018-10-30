@@ -1,25 +1,13 @@
 import React, { Component, Fragment } from 'react';
-import ppHOC from './hoc/input.jsx';
+import ppHOC from './hoc/ppHOC.jsx';
 // import Example from './hooks/index.jsx';
 import iiHOC from './hoc/iiHoc.jsx';
+import withLoading from './hoc/withLoading.jsx';
 
 // @ppHOC
 class App extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            value: null
-        };
-        this.handChange = this.handChange.bind(this);
-    }
-    handChange(event){
-        this.setState({
-            value: event.target.value
-        });
-    }
     render() {
-        console.log(this.props);
-        const { value, onChange } = this.props.name;
+        // const { value, onChange } = this.props.name;
         return (
             <Fragment>
                 {/* ppHOC */}
@@ -29,11 +17,14 @@ class App extends Component {
                     <input name="rocky" x='x' {...this.props.name} />
                 </div> */}
                 {/* iiHOC */}
-                <div>1</div>
+                {/* <div>1</div> */}
+                <div>loading</div>
             </Fragment>
         );
     }
 }
 
 // export default ppHOC(App);
-export default iiHOC(App);
+// export default iiHOC(App);
+export default withLoading(App);
+// export default App;

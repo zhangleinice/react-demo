@@ -15,7 +15,7 @@ const ppHOC = WrapComponent => {
             });
         }
         render() {
-            console.log(this.props);
+            // 添加新的props向下传给WrapComponent，不破坏从上层接收的props
             const newProps = {
                 name: {
                     value: this.state.name,
@@ -23,7 +23,7 @@ const ppHOC = WrapComponent => {
                 }
             };
             return (
-                <WrapComponent {...this.props} {...newProps}/>
+                <WrapComponent {...newProps} {...this.props}/>
             );
         }
     };
