@@ -26,5 +26,5 @@ class App extends Component {
 
 // export default ppHOC(App);
 // export default iiHOC(App);
-export default withLoading(App);
-// export default App;
+// export default withLoading(App);
+export default App;

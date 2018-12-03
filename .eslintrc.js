@@ -19,7 +19,8 @@ module.exports = {
     "rules": {
         "quotes": [1, "single"],
         "no-extra-semi": 1, 
-        "semi": [1, "always"],
+        // 结尾分号
+        "semi": [0, "always"],
         
         "strict": 2,
         "no-console": 1,

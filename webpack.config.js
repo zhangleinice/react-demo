@@ -7,7 +7,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 // 生成html
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 // webpack构建离线应用
-const ServiceWorkerWebpackPlugin =  require('serviceworker-webpack-plugin');
+// const ServiceWorkerWebpackPlugin =  require('serviceworker-webpack-plugin');
 
 module.exports = {
   // 提供 mode 配置选项，告知 webpack 使用相应模式的内置优化。
@@ -109,4 +109,4 @@ module.exports = {
     // 启用gzip压缩优化，默认false
     compress: true
   }
-}
+};
