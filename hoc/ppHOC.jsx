@@ -23,7 +23,10 @@ const ppHOC = WrapComponent => {
                 }
             };
             return (
-                <WrapComponent {...newProps} {...this.props}/>
+                <div>
+                    <div>124</div>
+                    {/* <WrapComponent {...newProps} {...this.props}/> */}
+                </div>
             );
         }
     };

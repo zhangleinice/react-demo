@@ -17,8 +17,8 @@ class App extends Component {
                     <input name="rocky" x='x' {...this.props.name} />
                 </div> */}
                 {/* iiHOC */}
-                {/* <div>1</div> */}
-                <div>loading</div>
+                <div>1</div>
+                {/* <div>loading</div> */}
             </Fragment>
         );
     }
@@ -26,5 +26,6 @@ class App extends Component {
 
 // export default ppHOC(App);
 // export default iiHOC(App);
+// export default backHome({})(App);
 // export default withLoading(App);
 export default App;
